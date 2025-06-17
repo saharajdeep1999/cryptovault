@@ -1,0 +1,27 @@
+Variable	Description
+-  Caesar Cipher Variables  -
+text  -  The input string (plaintext or ciphertext) to be encrypted/decrypted.
+shift  -  Number of positions each letter is shifted (positive = right, negative = left).
+char  -  Each individual character being processed in the loop.
+shift_base  -  ASCII base (A or a) depending on whether the character is upper or lowercase.
+encrypted  -  Output string after applying the Caesar cipher logic.
+
+----------------------------------------------------------------------------------------------------------------
+
+-  AES Encryption Variables  -
+text  -  Plaintext string to encrypt.
+key  -  Symmetric AES key (must be 16 characters = 128-bit).
+cipher  -  AES cipher object created with the key and mode.
+ct_bytes  -  Encrypted ciphertext in bytes.
+iv  -  Initialization Vector (random, unique per encryption run, 16 bytes).
+raw  -  Base64-decoded full ciphertext input (includes IV + encrypted message).
+ct-  The actual ciphertext extracted from raw, excluding IV.
+
+------------------------------------------------------------------------------------------------------------------
+
+choice  -  User’s menu selection (1–5).
+msg  -  Message input from the user (for encrypt/decrypt).
+ciphertext  -  Encrypted AES message input by the user.
+shift  -  Integer value used for Caesar cipher shift.
+key  -  16-character AES key input by the user.
+
